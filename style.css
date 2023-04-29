@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gameboard{
+    margin: 10px 0px;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.settings{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 250px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 10px;
+    background-color: #232;
+    border-radius: 5px;
+}
+.settings input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:0px;
+    background-color: #222;
+    color:#fff;
+}
+.ctn{
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+input:focus{
+    outline: none;
+}
+.ctn input{
+    width: 66.2px;
+    height: 66.2px;
+    text-align: center;
+    font-size: 22px;
+    border:0px;
+}
+.ctn input:focus{
+    background-color: antiquewhite;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
