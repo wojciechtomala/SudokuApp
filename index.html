@@ -10,63 +10,13 @@
 </head>
 <body>
     <div class="settings">
-        <label for="size">Board size: <input id="size--input" name="size" type="number" placeholder="Board size" value="2" min="0" max="3"></label>
-        <input id="submit-btn" type="button" value="SAVE">
-    </div>
-    <div class="gameboard" id="gameboard">
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-        </div>
-
-        <div class="ctn">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
-            <input type="number"><input type="number"><input type="number">
+        <input id="submit-btn" type="button" value="GENERATE">
+        <input id="check-btn" type="button" value="CHECK VALID">
+        <input id="solve-btn" type="button" value="SOLVE">
+        <div class="validation-box">
+            <span id="validation-result" class="default">CHECK YOUR BOARD</span>
         </div>
     </div>
+    <div class="gameboard" id="gameboard"></div>
 </body>
 </html>
