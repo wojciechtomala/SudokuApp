@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    color: #fff;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.settings{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 250px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+.settings input{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:0px;
+    background-color: #222;
+    color:#fff;
+}
+.gameboard{
+    margin: 10px 0px 50px 0px;
+    width: 675px;
+    height: 675px;
+    background-color: #9FACE6;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.gameboard input{
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    border-spacing: 0;
+    text-align: center;
+    border:1px solid #9FACE6;
+    font-size: 30px;
+}
+input:focus{
+    outline: none;
+}
+.settings input:focus{
+    background-color: #aa7628;
+}
+.gameboard input:focus{
+    background-color: #faebd7;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.validation-box{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.default{
+    font-weight: 600;
+    color: #222;
+}
+#validation-result{
+    text-align: center;
+}
+.valid{
+    color:#2e7d00
+}
+.invalid{
+    color: #BD0000;
+}
+.verifying{
+    color:#b18713;
+}
+.checking{
+    background-color: #65e2e2;
+}
+.mistake{
+    background-color: #b15858;
+}
+.running{
+    pointer-events: none;
+}
+.completed{
+    pointer-events: auto;
+}
